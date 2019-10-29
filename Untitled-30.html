@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link ref="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style type="text/css">
+            table,th,td{
+                
+                border-radius: 20px;
+                border:1px solid powderblue}
+                
+                
+            </style>
+        <script>
+
+            function startTime(){
+                var today=new Date();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                var s=today.getSeconds();
+                m=checkTime(m);
+                s=checkTime(s);
+                document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                t=setTimeout(function(){startTime()},500);
+            }
+            function checkTime(i){
+                if(i<10){
+                    i="0"+1;
+                }
+                return i;
+            }
+
+</script>
+    </head>
+    <body onload="startTime() ">
+       <p style="font-size: 300%;float:right;color:springgreen;">这里其实有一张背景图，只有女装的人能看见
+       </p>
+        <select>
+            <option value="星期一" onclick="document.getElementById('cosa').style.display='block';
+             document.getElementById('cosb').style.display='none';
+             document.getElementById('cosc').style.display='none';
+             document.getElementById('cosd').style.display='none';
+             document.getElementById('cose').style.display='none';
+             document.getElementById('cosf').style.display='none';
+             document.getElementById('cosg').style.display='none';">星期一</option> 
+            <option value="星期二" onclick="document.getElementById('cosb').style.display='block';
+             document.getElementById('cosa').style.display='none';
+             document.getElementById('cosc').style.display='none';
+             document.getElementById('cosd').style.display='none';
+             document.getElementById('cose').style.display='none';
+             document.getElementById('cosf').style.display='none';
+             document.getElementById('cosg').style.display='none';">星期二</option> 
+            <option value="星期三" onclick="document.getElementById('cosc').style.display='block';
+             document.getElementById('cosb').style.display='none';
+             document.getElementById('cosa').style.display='none';
+             document.getElementById('cosd').style.display='none';
+             document.getElementById('cose').style.display='none';
+             document.getElementById('cosf').style.display='none';
+             document.getElementById('cosg').style.display='none';">星期三</option>
+             <option value="星期四" onclick="document.getElementById('cosd').style.display='block';
+              document.getElementById('cosb').style.display='none';
+             document.getElementById('cosc').style.display='none';
+             document.getElementById('cosa').style.display='none';
+             document.getElementById('cose').style.display='none';
+             document.getElementById('cosf').style.display='none';
+             document.getElementById('cosg').style.display='none';">星期四</option>
+             <option value="星期五" onclick="document.getElementById('cose').style.display='block';
+              document.getElementById('cosb').style.display='none';
+             document.getElementById('cosc').style.display='none';
+             document.getElementById('cosd').style.display='none';
+             document.getElementById('cosa').style.display='none';
+             document.getElementById('cosf').style.display='none';
+             document.getElementById('cosg').style.display='none';">星期五</option>
+             <option value="星期六" onclick="document.getElementById('cosf').style.display='block';
+              document.getElementById('cosb').style.display='none';
+             document.getElementById('cosc').style.display='none';
+             document.getElementById('cosd').style.display='none';
+             document.getElementById('cose').style.display='none';
+             document.getElementById('cosa').style.display='none';
+             document.getElementById('cosg').style.display='none';">星期六</option>
+             <option value="星期日" onclick="document.getElementById('cosg').style.display='block';
+              document.getElementById('cosb').style.display='none';
+             document.getElementById('cosc').style.display='none';
+             document.getElementById('cosd').style.display='none';
+             document.getElementById('cose').style.display='none';
+             document.getElementById('cosf').style.display='none';
+             document.getElementById('cosa').style.display='none';">星期日</option>      
+             </select>
+        <div id="txt"></div>
+        <table style="display:none" id="cosa">
+                <tr>    
+                        <th rowspan="5">
+                              Hi! Monday!
+                            </th>
+                
+                            <td>1-2</td>
+                            <td>危机分（一） 东九楼B201</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td> 
+                            <td>快乐英语time 东九楼A104</td>
+                        </tr>
+                        <tr>
+                            <td>5-6</td>
+                            <td>Leisure Time</td>
+                        </tr>
+                        <tr> 
+                            <td>7-8</td>
+                            <td>C++东十二楼414</td>
+                        </tr>
+                         <tr>
+                             <td>9-12</td>
+                             <td>Leisure Time</td>
+                         </tr>
+                        
+        <table style="display:none" id="cosb">
+                <td>1-2</td>
+                <td>Leisure Time</td>
+            </tr>
+            <tr>
+               <td>3-4</td> 
+               <td>Leisure Time</td>
+            </tr>
+            <tr>
+               <td>5-6</td>
+               <td>Leisure Time</td>
+            </tr>
+            <tr> 
+               <td>7-8</td>
+               <td>Leisure Time</td>
+            </tr>
+            <tr>
+               <td>9-12</td>
+               <td>Leisure Time</td>
+            </tr>
+           
+        </table>
+        <table style="display:none" id="cosc">
+                <td>1-2</td>
+                <td>社会主义新青年试验教导课 东九楼C103</td>
+             </tr>
+             <tr>
+                <td>3-4</td> 
+                <td>危机分 东九楼B201</td>
+            </tr>
+            <tr>
+                <td>5-6</td>
+                <td>Happy English! 东九A104</td>
+            </tr>
+            <tr> 
+                <td>7-8</td>
+                <td>Leisure Time</td>
+            </tr>
+            <tr>
+                <td>9-12</td>
+                <td>Leisure Time</td>
+             </tr>
+        </table>
+        <table style="display:none" id="cosd"> <td>1-2</td>
+            <td>C++ 东十二楼414</td>
+        </tr>
+         <tr>
+            <td>3-4</td> 
+           <td>P.E.baby  中操</td>
+        </tr>
+        <tr>
+           <td>5-6</td>
+          <td>Leisure Time</td>
+         </tr>
+         <tr> 
+         <td>7-8</td>
+        <td>Leisure Time</td>
+         </tr>
+          <tr>
+             <td>9-12</td>
+              <td>Leisure Time</td>
+           </tr>
+          </table>
+        <table style="display:none" id="cose">
+                <td>1-4</td>
+                <td>社会主义现代化建设工程蓝图课 东十二楼103</td> 
+                
+              </tr>
+           <tr>
+                <td>5-6</td>
+               <td>危机分 东九楼B201</td>
+          </tr>
+           <tr> 
+                <td>7-8</td>
+                 <td>社会主义新青年试验教导课  东九楼C103</td>
+             </tr>
+              <tr>
+                  <td>9-12</td>
+                  <td>Leisure Time</td>
+             </tr></table>
+        <p style="display:none;font-size:120%;color:skyblue" id="cosf">学习？？？？上课？？？？傻了吗？？？？？马上滚去睡觉！！！！！</p>
+        <p style="display:none;font-size:120%;color:skyblue" id="cosg">学习？？？？上课？？？？傻了吗？？？？？马上滚去睡觉！！！！！</p>
+    </body>
+</html>
